@@ -122,13 +122,13 @@ export default {
     opacity:0.4;
   }
 }
-.el-menu {
-  border-right: 0;
-  background-color: #333744!important;
-}
-.el-aside {
-  background-color: #333744!important;
-}
+// .el-aside {
+  // background-color: #333744;
+  .el-menu {
+    border-right: 0;//默认有一个右边框，在这里自定义覆盖掉
+    background-color: #333744!important;
+  }
+// }
 .el-main {
   background-color: #EAEDF1;
 }

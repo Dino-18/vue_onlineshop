@@ -77,7 +77,7 @@ export default {
     // 获取所有菜单
     async getMenulist() {
       const {data: res} = await this.$http.get('/menus');
-      // get返回的是promise，可以用await和async简化
+      // get返回的是promise，可以用awaite和async简化
       if(res.meta.status!==200) return this.$message.error()// 返回失败
       this.menulist = res.data// 获取左侧菜单数据
       console.log(res)
@@ -90,7 +90,7 @@ export default {
     savaNavstate(activePath) {
       window.sessionStorage.setItem('activePath', activePath)
       this.activePath = activePath
-      // console.log(this.activePath)
+      console.log(this.activePath)
     }
   }
 }
@@ -122,12 +122,11 @@ export default {
     opacity:0.4;
   }
 }
-.el-menu {
-  border-right: 0;
-  background-color: #333744!important;
-}
 .el-aside {
-  background-color: #333744!important;
+  background-color: #333744;
+  .el-menu {
+    border-right: 0;//默认有一个右边框，在这里自定义覆盖掉
+  }
 }
 .el-main {
   background-color: #EAEDF1;
