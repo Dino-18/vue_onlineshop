@@ -107,8 +107,7 @@ export default {
   padding-left:0;
   align-items: center;
   color:#fff;
-  font-size:24px;
-  font-weight: bold;
+  font-size:20px;
   > div {
     display: flex;
     align-items: center;
@@ -119,7 +118,7 @@ export default {
   img {
     display: block;
     height: 60px;
-    width: 64px;
+    width: 60px;
     opacity:0.4;
     background-color: transparent;
   }

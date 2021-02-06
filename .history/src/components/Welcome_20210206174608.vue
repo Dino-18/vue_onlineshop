@@ -107,7 +107,7 @@ export default {
             color: '#F4516C',
         },
         {
-            icon: 'icon-chengjiaodingdan',
+            icon: 'chengjiaodingdan',
             title: '昨日成交量',
             data: '2253￥',
             color: '#34BFA3',
@@ -332,11 +332,7 @@ export default {
 .welcome {
   margin-top: 10px;
   padding: 0 10px;
-//   position: relative;
-  #github {
-      margin-top: 60px;
-      z-index:1;
-  }
+
   .el-row {
     .el-card__body {
       display: flex;

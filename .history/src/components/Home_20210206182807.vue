@@ -4,6 +4,7 @@
     <el-header>
       <div>
         <img src="../assets/logo2.jpg" alt="">
+        <i display="block" class="iconfont yonghuguanli"></i>
         <span>电商后台管理系统</span>
       </div>
       <el-button type="info" @click="logout">退出</el-button>
@@ -107,8 +108,7 @@ export default {
   padding-left:0;
   align-items: center;
   color:#fff;
-  font-size:24px;
-  font-weight: bold;
+  font-size:20px;
   > div {
     display: flex;
     align-items: center;
@@ -119,9 +119,8 @@ export default {
   img {
     display: block;
     height: 60px;
-    width: 64px;
+    width: 60px;
     opacity:0.4;
-    background-color: transparent;
   }
 }
 .el-menu {

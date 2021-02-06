@@ -89,28 +89,28 @@ export default {
       // 四个card的数据
       cardData: [
         {
-            icon: 'icon-chakan',
-            title: '总访问量',
-            data: null,
-            color: '#40C9C6',
+          icon: 'icon-showpassword',
+          title: '总访问量',
+          data: null,
+          color: '#40C9C6',
         },
         {
-            icon: 'icon-yonghu',
-            title: '昨日访问量',
-            data: null,
-            color: '#36A3F7',
+          icon: 'icon-user',
+          title: '昨日访问量',
+          data: null,
+          color: '#36A3F7',
         },
         {
-            icon: 'icon-gouwuche',
-            title: '总成交量',
-            data: '1025018￥',
-            color: '#F4516C',
+          icon: 'icon-cart',
+          title: '总成交量',
+          data: '1025018￥',
+          color: '#F4516C',
         },
         {
-            icon: 'icon-chengjiaodingdan',
-            title: '昨日成交量',
-            data: '2253￥',
-            color: '#34BFA3',
+          icon: 'icon-checkmark',
+          title: '昨日成交量',
+          data: '2253￥',
+          color: '#34BFA3',
         },
       ],
       // axios实例对象
@@ -332,11 +332,7 @@ export default {
 .welcome {
   margin-top: 10px;
   padding: 0 10px;
-//   position: relative;
-  #github {
-      margin-top: 60px;
-      z-index:1;
-  }
+
   .el-row {
     .el-card__body {
       display: flex;

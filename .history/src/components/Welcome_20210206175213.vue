@@ -332,11 +332,8 @@ export default {
 .welcome {
   margin-top: 10px;
   padding: 0 10px;
-//   position: relative;
-  #github {
-      margin-top: 60px;
-      z-index:1;
-  }
+  position: relative;
+
   .el-row {
     .el-card__body {
       display: flex;

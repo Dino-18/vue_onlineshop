@@ -1,6 +1,11 @@
 <template>
 
   <div class="login_container">
+    <el-button
+      plain
+      @click="open1">
+      右上角
+    </el-button>
     <div class="login_box">
       <!-- 头像区域 -->
       <div class="avatar_box">
@@ -27,6 +32,7 @@
 </template>
 
 <script>
+import Notification from 'element-ui'
 export default {
   data() {
     return {
@@ -47,24 +53,8 @@ export default {
           { required: true, message: '请输入登录密码', trigger: 'blur' },
           { min: 6, max: 15, message: '长度在 6 到 15 个字符', trigger: 'blur' }
         ]
-      },
-      // 消息框
-      notify: null,
+      }
     }
-  },
-  created() {
-    this.notify = this.$notify({
-      title: "欢迎您",
-      message: "初始用户名：admin </br> 初始密码：123456",
-      type: "success",
-      dangerouslyUseHTMLString: true,
-      offset: 100,
-      duration: 5000,
-    });
-  },
-  destroyed() {
-    // 组件销毁时关闭提示框
-    this.notify.close()
   },
   methods: {
     // 点击重置按钮，重置登录表单

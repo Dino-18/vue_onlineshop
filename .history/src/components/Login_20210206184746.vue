@@ -1,6 +1,11 @@
 <template>
 
   <div class="login_container">
+    <el-button
+      plain
+      @click="open1">
+      右上角
+    </el-button>
     <div class="login_box">
       <!-- 头像区域 -->
       <div class="avatar_box">

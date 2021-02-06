@@ -1,6 +1,7 @@
 <template>
 
   <div class="login_container">
+    
     <div class="login_box">
       <!-- 头像区域 -->
       <div class="avatar_box">
@@ -28,6 +29,7 @@
 
 <script>
 export default {
+  import { Notification } from 'element-ui';
   data() {
     return {
       // 这是登录表单的数据绑定对象
@@ -47,24 +49,8 @@ export default {
           { required: true, message: '请输入登录密码', trigger: 'blur' },
           { min: 6, max: 15, message: '长度在 6 到 15 个字符', trigger: 'blur' }
         ]
-      },
-      // 消息框
-      notify: null,
+      }
     }
-  },
-  created() {
-    this.notify = this.$notify({
-      title: "欢迎您",
-      message: "初始用户名：admin </br> 初始密码：123456",
-      type: "success",
-      dangerouslyUseHTMLString: true,
-      offset: 100,
-      duration: 5000,
-    });
-  },
-  destroyed() {
-    // 组件销毁时关闭提示框
-    this.notify.close()
   },
   methods: {
     // 点击重置按钮，重置登录表单
@@ -85,13 +71,7 @@ export default {
         // 2. 通过编程式导航跳转到后台主页，路由地址是 /home
         this.$router.push('/home')
       })
-    },
-    open1() {
-        this.$notify({
-          title: '自定义位置',
-          message: '右上角弹出的消息'
-        });
-      },
+    }
   }
 }
 </script>

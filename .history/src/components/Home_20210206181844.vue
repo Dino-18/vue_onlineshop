@@ -21,7 +21,7 @@
             <!-- 一级菜单的模板 -->
             <template slot="title">
               <!-- 图标 -->
-              <i :class="iconsObj[item.id]"></i>
+              <span class="icon-yonghuguanli" z-index=1></span>
               <!-- 文本 -->
               <span>{{item.authName}}</span>
             </template>
@@ -52,11 +52,11 @@ export default {
     return {
       menulist:[],
       iconsObj: {
-        '125': 'iconfont icon-yonghuguanli',
-        '103': 'iconfont icon-quanxian',
-        '101': 'iconfont icon-shangpinguanli',
-        '102': 'iconfont icon-dingdanguanli',
-        '145': 'iconfont icon-icon'
+        '125': 'icon-yonghuguanli',
+        '103': 'icon-tijikongjian',
+        '101': 'icon-shangpin',
+        '102': 'icon-danju',
+        '145': 'icon-baobiao'
       },
       //菜单栏是否折叠
       isCollapse: false,
@@ -107,8 +107,7 @@ export default {
   padding-left:0;
   align-items: center;
   color:#fff;
-  font-size:24px;
-  font-weight: bold;
+  font-size:20px;
   > div {
     display: flex;
     align-items: center;
@@ -119,9 +118,8 @@ export default {
   img {
     display: block;
     height: 60px;
-    width: 64px;
+    width: 60px;
     opacity:0.4;
-    background-color: transparent;
   }
 }
 .el-menu {

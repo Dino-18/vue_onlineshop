@@ -119,7 +119,7 @@ export default {
   img {
     display: block;
     height: 60px;
-    width: 64px;
+    width: 60px;
     opacity:0.4;
     background-color: transparent;
   }

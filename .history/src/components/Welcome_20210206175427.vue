@@ -334,7 +334,7 @@ export default {
   padding: 0 10px;
 //   position: relative;
   #github {
-      margin-top: 60px;
+      margin-top: 10px;
       z-index:1;
   }
   .el-row {

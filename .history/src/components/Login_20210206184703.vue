@@ -1,6 +1,11 @@
 <template>
 
   <div class="login_container">
+    <el-button
+      plain
+      @click="open1">
+      右上角
+    </el-button>
     <div class="login_box">
       <!-- 头像区域 -->
       <div class="avatar_box">
@@ -47,9 +52,7 @@ export default {
           { required: true, message: '请输入登录密码', trigger: 'blur' },
           { min: 6, max: 15, message: '长度在 6 到 15 个字符', trigger: 'blur' }
         ]
-      },
-      // 消息框
-      notify: null,
+      }
     }
   },
   created() {

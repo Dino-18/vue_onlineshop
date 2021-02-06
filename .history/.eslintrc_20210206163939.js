@@ -12,16 +12,8 @@ module.exports = {
     },
     rules: {
       // "space-before-function-paren": ["error", "never"],
+      "space-before-function-paren": 0,
       'no-irregular-whitespace': 'off',
-      "no-unused-vars": 'off',
-      'space-before-function-paren': [
-        'error',
-        {
-        anonymous: 'always',  
-        named: 'always',       
-        asyncArrow: 'always',      
-        },
-        
-        ]
+      "no-unused-vars": 'off'
     }
   }
