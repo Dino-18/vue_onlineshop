@@ -148,7 +148,7 @@
 
 <script>
 export default {
-    data() {
+    data () { 
         //自定义手机和邮箱的校验规则
         var checkEmail = (rule, value, cb) => {
             //正则表达式验证
